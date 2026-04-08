@@ -2,8 +2,7 @@ from utils import db_connect
 engine = db_connect()
 
 # your code here
-from utils import db_connect
-engine = db_connect()
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -11,6 +10,9 @@ import matplotlib.pyplot as plt
 from scipy import stats
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.feature_selection import chi2, SelectKBest
+from sklearn.model_selection import train_test_split
 
 #Imported Necessary Libraries // Librerias necesarias para el proyecto. 
 
