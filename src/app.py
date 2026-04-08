@@ -290,5 +290,10 @@ for feature, coef in zip(X_train.columns, model.coef_):
 y_pred = model.predict(X_test)
 y_pred
 
+# Model evaluation / Evaluación del modelo
+
+print(f"Error cuadrático medio: {mean_squared_error(y_test, y_pred)}")
+print(f"Coeficiente de determinación: {r2_score(y_test, y_pred)}")
+
 
 
